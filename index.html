@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hirdianshu Singla | Portfolio</title>
+  <meta name="description" content="Portfolio of Hirdianshu Singla — Computer Engineering student (UBC) focused on systems, FPGA/verification, and robotics." />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="dot" aria-hidden="true"></span>
+        <span>HS</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="btn ghost" type="button" aria-label="Toggle dark mode">
+          🌙
+        </button>
+        <a class="btn" href="./assets/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="pill">Computer Engineering @ UBC • Grad Dec 2027</p>
+          <h1>Hirdianshu Singla</h1>
+          <p class="subtitle">
+            I build reliable systems — from <strong>databases</strong> to <strong>FPGA/verification</strong> to
+            <strong>autonomous robotics</strong>.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#contact">Contact</a>
+          </div>
+
+          <div class="links">
+            <!-- Replace these with your real links -->
+            <a href="https://github.com/YOUR_GITHUB" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/YOUR_LINKEDIN/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="mailto:singlahirdianshu@gmail.com">Email</a>
+            <!-- Optional: You may remove phone number before publishing -->
+            <a href="tel:+17789512263">Phone</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h2 class="card-title">Highlights</h2>
+          <ul class="bullets">
+            <li>Trainee Analyst: requirements → test scenarios → automation scripts</li>
+            <li>SQL schema + views for holdings, audit, compliance flags</li>
+            <li>SystemVerilog FIFO + assertions + randomized regressions</li>
+            <li>F1TENTH motion-control stack with LiDAR/vision + telemetry</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p class="lead">
+          I’m a Computer Engineering student at the University of British Columbia. I like working on projects that
+          combine clean design with real-world constraints: correctness, performance, and reproducibility.
+        </p>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Education</h3>
+            <p><strong>BASc, Computer Engineering</strong> — The University of British Columbia (Vancouver)</p>
+            <p class="muted">Expected graduation: Dec 2027</p>
+            <p class="muted">
+              Coursework: Algorithms & DSA, OS, Computer Architecture, Digital Systems/FPGA, Databases (SQL), Software Engineering, AI (intro)
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>What I’m looking for</h3>
+            <p class="muted">
+              Internships / projects in software engineering, verification, embedded systems, robotics, and systems work.
+            </p>
+            <p class="muted">
+              I enjoy roles where I can own a feature end-to-end and measure impact with real data.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="muted">A few projects I’m proud of — add links/screenshots as you refine this site.</p>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-top">
+              <h3>Investment Management Database (SQL)</h3>
+              <p class="tag">Oct 2025 – Present</p>
+            </div>
+            <ul class="bullets">
+              <li>Normalized schema for funds, portfolios, instruments, trades/fills, positions.</li>
+              <li>Views + queries for holdings, trade audit, P/L, and compliance flags.</li>
+              <li>Modeled workflows for simulated users (PMs + analysts) to study allocation and risk.</li>
+            </ul>
+            <a class="card-link" href="https://github.com/YOUR_GITHUB" target="_blank" rel="noreferrer">Add repo link →</a>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <h3>F1TENTH Autonomous Racing (UBC)</h3>
+              <p class="tag">Sept 2025 – Present</p>
+            </div>
+            <ul class="bullets">
+              <li>Motion-control stack targeting MPCC-style overtaking using LiDAR + vision.</li>
+              <li>Ackermann command publishing + telemetry logging for reproducible tuning.</li>
+              <li>Worked on TTC-based safety braking + shared configs for consistent deployment.</li>
+            </ul>
+            <a class="card-link" href="https://github.com/YOUR_GITHUB" target="_blank" rel="noreferrer">Add repo link →</a>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <h3>Parameterizable FIFO + Assertions (SystemVerilog)</h3>
+              <p class="tag">Jun 2025 – Jul 2025</p>
+            </div>
+            <ul class="bullets">
+              <li>Synchronous FIFO with full/empty flags and safe write/read arbitration.</li>
+              <li>SVAs for overflow/underflow exclusion + boundary flag/count coherence.</li>
+              <li>Self-checking randomized testbench with seeded regressions + first-fail traces.</li>
+            </ul>
+            <a class="card-link" href="https://github.com/YOUR_GITHUB" target="_blank" rel="noreferrer">Add repo link →</a>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <h3>FPGA Dice Roller (Verilog)</h3>
+              <p class="tag">Sept 2023 – Dec 2023</p>
+            </div>
+            <ul class="bullets">
+              <li>FSM-driven dice roller with input debouncing + clock prescaling.</li>
+              <li>Simulated in ModelSim and brought up on DE1-SoC with HEX + LEDs.</li>
+              <li>Pin assignments + basic timing constraints (SDC/STA).</li>
+            </ul>
+            <a class="card-link" href="https://github.com/YOUR_GITHUB" target="_blank" rel="noreferrer">Add repo link →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <h2>Experience</h2>
+
+        <div class="card">
+          <div class="card-top">
+            <div>
+              <h3>Trainee Analyst — Winux Software Solutions Pvt Ltd</h3>
+              <p class="muted">Mohali, Punjab • Apr 2024 – Aug 2024; Jun 2025 – Sep 2025</p>
+            </div>
+            <span class="tag">Requirements • QA • Automation</span>
+          </div>
+
+          <ul class="bullets">
+            <li>Led discovery sessions with stakeholders and wrote user stories to shift defect discovery earlier.</li>
+            <li>Mapped as-is/to-be flows and maintained a change log to keep dev and QA aligned.</li>
+            <li>Derived test scenarios/edge cases with QA to improve test coverage.</li>
+            <li>Built Python scripts for log parsing, pass/fail stats, and first-fail triage summaries.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2>Skills</h2>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Programming</h3>
+            <p class="muted">Java, Python, C/C++, OOP, DSA</p>
+          </div>
+
+          <div class="card">
+            <h3>Databases</h3>
+            <p class="muted">SQL, schema design, indexing, normalization (BCNF), complex queries</p>
+          </div>
+
+          <div class="card">
+            <h3>Hardware & Robotics</h3>
+            <p class="muted">Verilog, basic SystemVerilog, ModelSim/Questa, Quartus, DE1-SoC, ROS2, OpenCV (basic)</p>
+          </div>
+
+          <div class="card">
+            <h3>Tools</h3>
+            <p class="muted">Git, Linux, Bash/Make, GDB, unit testing</p>
+          </div>
+
+          <div class="card">
+            <h3>Workflow</h3>
+            <p class="muted">Requirements analysis, SDLC, Agile/Scrum, debugging, documentation</p>
+          </div>
+
+          <div class="card">
+            <h3>Interests</h3>
+            <p class="muted">Systems, verification, autonomous vehicles, performance + reliability</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="lead">Want to collaborate or chat? The quickest way to reach me is email.</p>
+
+        <div class="contact-card">
+          <div>
+            <p class="muted">Location</p>
+            <p>Surrey, BC</p>
+          </div>
+          <div>
+            <p class="muted">Email</p>
+            <p><a href="mailto:singlahirdianshu@gmail.com">singlahirdianshu@gmail.com</a></p>
+          </div>
+          <div>
+            <p class="muted">Phone (optional)</p>
+            <p><a href="tel:+17789512263">+1 (778) 951-2263</a></p>
+          </div>
+        </div>
+
+        <p class="muted small">
+          Tip: If you don’t want your phone number public, remove the phone link in the hero + contact section before publishing.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <p class="muted">© <span id="year"></span> Hirdianshu Singla</p>
+      <div class="footer-links">
+        <a href="#top">Back to top</a>
+        <a href="./assets/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
