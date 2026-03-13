@@ -462,3 +462,7 @@ body:hover .cursor-glow{opacity:1}
 
 h3{font-size:18px;font-weight:800;margin-bottom:6px}
 p{margin:4px 0}
+
+/* ── FALLBACK: show content even if JS observer is slow ── */
+@keyframes revealFallback{0%{opacity:0;transform:translateY(40px)}100%{opacity:1;transform:none}}
+.anim:not(.is-visible){animation:revealFallback 0.8s ease forwards;animation-delay:0.5s}
