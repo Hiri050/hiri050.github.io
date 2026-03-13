@@ -3,29 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hirdianshu Singla — Engineer</title>
-  <meta name="description" content="Portfolio of Hirdianshu Singla — Computer Engineering student at UBC. Systems, FPGA verification, databases, autonomous robotics." />
-  <meta name="author" content="Hirdianshu Singla" />
-  <meta property="og:title" content="Hirdianshu Singla — Engineer" />
-  <meta property="og:description" content="Computer Engineering @ UBC — Systems · FPGA · Databases · Robotics" />
-  <meta property="og:type" content="website" />
+  <title>Hirdianshu Singla - Engineer</title>
+  <meta name="description" content="Portfolio of Hirdianshu Singla - Computer Engineering student at UBC." />
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
-
 <body>
   <a class="skip" href="#main">Skip to content</a>
-
-  <!-- ════ CURSOR GLOW ════ -->
   <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
-
-  <!-- ════ NOISE OVERLAY ════ -->
   <div class="noise" aria-hidden="true"></div>
 
-  <!-- ════ HEADER ════ -->
   <header class="hdr" id="hdr">
     <div class="hdr__inner">
       <a class="hdr__logo" href="#hero" aria-label="Home">
@@ -35,7 +25,6 @@
           <defs><linearGradient id="lg" x1="0" y1="0" x2="36" y2="36"><stop stop-color="#6ee7b7"/><stop offset="1" stop-color="#818cf8"/></linearGradient></defs>
         </svg>
       </a>
-
       <nav class="hdr__nav" id="nav">
         <a href="#about" class="hdr__link" data-nav>About</a>
         <a href="#projects" class="hdr__link" data-nav>Projects</a>
@@ -43,13 +32,12 @@
         <a href="#skills" class="hdr__link" data-nav>Skills</a>
         <a href="#contact" class="hdr__link" data-nav>Contact</a>
       </nav>
-
       <div class="hdr__actions">
         <button id="themeToggle" class="hdr__icon-btn" type="button" aria-label="Toggle theme">
           <svg class="ico ico--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.73 12.73 1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
           <svg class="ico ico--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/></svg>
         </button>
-        <a class="btn btn--sm" href="./assets/resume.pdf" target="_blank" rel="noreferrer">Résumé</a>
+        <a class="btn btn--sm" href="./assets/RESUME.pdf" target="_blank" rel="noreferrer">Resume</a>
         <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
@@ -57,7 +45,6 @@
     </div>
   </header>
 
-  <!-- ════ MOBILE NAV ════ -->
   <div class="mob" id="mob">
     <nav class="mob__links">
       <a href="#about">About</a>
@@ -65,56 +52,45 @@
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
-      <a class="btn" href="./assets/resume.pdf" target="_blank" rel="noreferrer">Résumé ↗</a>
+      <a class="btn" href="./assets/RESUME.pdf" target="_blank" rel="noreferrer">Resume</a>
     </nav>
   </div>
 
-  <!-- ════ MAIN ════ -->
   <main id="main">
 
-    <!-- ── HERO ── -->
     <section id="hero" class="hero">
       <div class="hero__bg" aria-hidden="true">
         <div class="hero__orb hero__orb--1"></div>
         <div class="hero__orb hero__orb--2"></div>
         <div class="hero__orb hero__orb--3"></div>
       </div>
-
       <div class="contain hero__layout">
         <div class="hero__col">
           <div class="hero__badge anim" data-anim="fade-up" data-delay="0">
             <span class="hero__dot"></span>
             Open to Opportunities
           </div>
-
           <h1 class="hero__title anim" data-anim="fade-up" data-delay="1">
-            <span class="hero__line">I'm Hirdianshu</span>
+            <span class="hero__line">I am Hirdianshu</span>
             <span class="hero__line hero__line--grad">I engineer systems.</span>
           </h1>
-
           <p class="hero__sub anim" data-anim="fade-up" data-delay="2">
-            Computer Engineering @ <strong>UBC</strong> · Graduating Dec 2027<br/>
-            From <em>databases</em> to <em>FPGA verification</em> to <em>autonomous robotics</em> — I build things that are correct, fast, and reproducible.
+            Computer Engineering at <strong>UBC</strong> - Graduating Dec 2027<br/>
+            From <em>databases</em> to <em>FPGA verification</em> to <em>autonomous robotics</em> - I build things that are correct, fast, and reproducible.
           </p>
-
           <div class="hero__cta anim" data-anim="fade-up" data-delay="3">
             <a class="btn btn--glow magnetic" href="#projects">Explore My Work</a>
             <a class="btn btn--ghost magnetic" href="#contact">Say Hello</a>
           </div>
-
           <div class="hero__social anim" data-anim="fade-up" data-delay="4">
             <a href="https://github.com/hiri050" target="_blank" rel="noreferrer" aria-label="GitHub" class="social-ico magnetic">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
-            <a href="https://www.linkedin.com/in/hirdianshu-singla/" target="_blank" rel="noreferrer" aria-label="LinkedIn" class="social-ico magnetic">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
             </a>
             <a href="mailto:singlahirdianshu@gmail.com" aria-label="Email" class="social-ico magnetic">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>
             </a>
           </div>
         </div>
-
         <div class="hero__col hero__col--visual anim" data-anim="fade-left" data-delay="2">
           <div class="term" id="term">
             <div class="term__bar">
@@ -123,48 +99,41 @@
               <span class="term__dot term__dot--g"></span>
               <span class="term__tab">hirdianshu@ubc:~</span>
             </div>
-            <div class="term__body" id="termBody">
-              <!-- JS types here -->
-            </div>
+            <div class="term__body" id="termBody"></div>
           </div>
         </div>
       </div>
-
       <div class="hero__scroll anim" data-anim="fade-up" data-delay="5" aria-hidden="true">
         <div class="hero__scroll-line"></div>
         <span>scroll</span>
       </div>
     </section>
 
-    <!-- ── ABOUT ── -->
     <section id="about" class="sec">
       <div class="contain">
         <header class="sec__head">
           <span class="sec__num anim" data-anim="fade-right">01</span>
           <h2 class="sec__title anim" data-anim="fade-up">About Me</h2>
         </header>
-
         <p class="sec__lead anim" data-anim="fade-up">
-          I'm a Computer Engineering student at the University of British Columbia. I'm drawn to projects where <strong>clean design meets real-world constraints</strong> — correctness, performance, and reproducibility aren't just nice-to-haves, they're the whole point.
+          I am a Computer Engineering student at the University of British Columbia. I am drawn to projects where <strong>clean design meets real-world constraints</strong> - correctness, performance, and reproducibility are not just nice-to-haves, they are the whole point.
         </p>
-
         <div class="about__grid">
           <div class="card card--tilt anim" data-anim="fade-up">
             <div class="card__glow"></div>
-            <span class="card__emoji">🎓</span>
+            <span class="card__emoji">&#127891;</span>
             <h3 class="card__title">Education</h3>
             <p><strong>BASc, Computer Engineering</strong></p>
             <p>The University of British Columbia, Vancouver</p>
             <p class="dim">Expected graduation: December 2027</p>
             <div class="card__rule"></div>
-            <p class="dim tiny"><strong>Coursework:</strong> Algorithms &amp; DSA · OS · Computer Architecture · Digital Systems / FPGA · Databases (SQL) · Software Engineering · AI</p>
+            <p class="dim tiny"><strong>Coursework:</strong> Algorithms and DSA - OS - Computer Architecture - Digital Systems / FPGA - Databases (SQL) - Software Engineering - AI</p>
           </div>
-
           <div class="card card--tilt anim" data-anim="fade-up" data-delay="1">
             <div class="card__glow"></div>
-            <span class="card__emoji">🎯</span>
-            <h3 class="card__title">What I'm Looking For</h3>
-            <p class="dim">Internships &amp; projects in <strong>software engineering</strong>, <strong>verification</strong>, <strong>embedded systems</strong>, <strong>robotics</strong>, and systems work.</p>
+            <span class="card__emoji">&#127919;</span>
+            <h3 class="card__title">What I am Looking For</h3>
+            <p class="dim">Internships and projects in <strong>software engineering</strong>, <strong>verification</strong>, <strong>embedded systems</strong>, <strong>robotics</strong>, and systems work.</p>
             <div class="card__rule"></div>
             <p class="dim">I enjoy roles where I can own a feature end-to-end and measure impact with real data.</p>
           </div>
@@ -172,7 +141,6 @@
       </div>
     </section>
 
-    <!-- ── PROJECTS ── -->
     <section id="projects" class="sec sec--alt">
       <div class="contain">
         <header class="sec__head">
@@ -180,137 +148,161 @@
           <h2 class="sec__title anim" data-anim="fade-up">Projects</h2>
         </header>
 
-        <p class="sec__lead anim" data-anim="fade-up">Featured work &amp; room for what's next. Drag to scroll →</p>
-
-        <div class="proj-filters anim" data-anim="fade-up">
-          <button class="proj-filters__btn is-active" data-filter="all">All</button>
-          <button class="proj-filters__btn" data-filter="software">Software</button>
-          <button class="proj-filters__btn" data-filter="hardware">Hardware / FPGA</button>
-          <button class="proj-filters__btn" data-filter="robotics">Robotics</button>
+        <div class="proj-section-label anim" data-anim="fade-up">
+          <span class="proj-section-tag proj-section-tag--feat">Featured</span>
+          <h3 class="proj-section-title">Highlight Reel</h3>
         </div>
-      </div>
+        <div class="proj-featured-grid">
 
-      <div class="proj-track" id="projTrack">
-        <div class="proj-track__inner">
-
-          <article class="proj card--tilt anim" data-anim="fade-up" data-cat="software">
+          <article class="proj proj--featured card--tilt anim" data-anim="fade-up" data-delay="1">
             <div class="proj__glow"></div>
-            <span class="proj__feat">★ Featured</span>
             <div class="proj__top">
-              <span class="proj__ico">🗃️</span>
+              <span class="proj__ico">&#9822;</span>
               <div>
-                <h3>Investment Management DB</h3>
-                <p class="proj__tags">SQL · Schema Design · Views</p>
+                <h3>Chess Engine</h3>
+                <p class="proj__tags">Java - Minimax - Alpha-Beta Pruning</p>
               </div>
             </div>
             <ul class="proj__list">
-              <li>Normalized schema for funds, portfolios, instruments, trades/fills, positions.</li>
-              <li>Views + queries for holdings, trade audit, P/L, and compliance flags.</li>
-              <li>Modeled workflows for simulated users (PMs + analysts) to study allocation &amp; risk.</li>
+              <li>Minimax with alpha-beta pruning at configurable search depth for strong play.</li>
+              <li>Bitboard-based board representation for fast move generation and evaluation.</li>
+              <li>Modular eval: material, mobility, pawn structure, and king safety heuristics.</li>
             </ul>
-            <div class="proj__foot">
-              <span class="proj__date">Oct 2025 – Present</span>
-              <a class="proj__link" href="#" target="_blank" rel="noreferrer">GitHub →</a>
-            </div>
+            <div class="proj__foot"><span class="proj__date">2024</span></div>
           </article>
 
-          <article class="proj card--tilt anim" data-anim="fade-up" data-delay="1" data-cat="robotics">
+          <article class="proj proj--featured card--tilt anim" data-anim="fade-up" data-delay="2">
             <div class="proj__glow"></div>
-            <span class="proj__feat">★ Featured</span>
             <div class="proj__top">
-              <span class="proj__ico">🏎️</span>
+              <span class="proj__ico">&#127950;</span>
               <div>
                 <h3>F1TENTH Autonomous Racing</h3>
-                <p class="proj__tags">ROS2 · Python · LiDAR · Vision</p>
+                <p class="proj__tags">ROS2 - Python - LiDAR - Vision</p>
               </div>
             </div>
             <ul class="proj__list">
-              <li>Motion-control stack targeting MPCC-style overtaking using LiDAR + vision.</li>
-              <li>Ackermann command publishing + telemetry logging for reproducible tuning.</li>
-              <li>TTC-based safety braking + shared configs for consistent deployment.</li>
+              <li>Motion-control stack targeting MPCC-style overtaking with LiDAR and vision fusion.</li>
+              <li>Ackermann command publishing and telemetry logging for reproducible tuning.</li>
+              <li>TTC-based safety braking with shared configs for consistent multi-run deployment.</li>
             </ul>
-            <div class="proj__foot">
-              <span class="proj__date">Sept 2025 – Present</span>
-              <a class="proj__link" href="#" target="_blank" rel="noreferrer">GitHub →</a>
-            </div>
+            <div class="proj__foot"><span class="proj__date">Sept 2025 - Present</span></div>
           </article>
 
-          <article class="proj card--tilt anim" data-anim="fade-up" data-delay="2" data-cat="hardware">
+          <article class="proj proj--featured card--tilt anim" data-anim="fade-up" data-delay="3">
             <div class="proj__glow"></div>
-            <span class="proj__feat">★ Featured</span>
             <div class="proj__top">
-              <span class="proj__ico">🔧</span>
+              <span class="proj__ico">&#127183;</span>
+              <div>
+                <h3>Baccarat Simulator</h3>
+                <p class="proj__tags">Python - OOP - Probability</p>
+              </div>
+            </div>
+            <ul class="proj__list">
+              <li>Rule-compliant Baccarat engine with Player / Banker / Tie betting mechanics.</li>
+              <li>Monte Carlo simulation mode to analyse edge, variance, and streak distribution.</li>
+              <li>CLI interface with round-by-round logging and session statistics output.</li>
+            </ul>
+            <div class="proj__foot"><span class="proj__date">2024</span></div>
+          </article>
+
+        </div>
+
+        <div class="proj-section-label anim" data-anim="fade-up" style="margin-top:56px">
+          <span class="proj-section-tag">All Projects</span>
+          <h3 class="proj-section-title">More Work</h3>
+        </div>
+        <div class="proj-all-grid">
+
+          <article class="proj card--tilt anim" data-anim="fade-up" data-delay="1">
+            <div class="proj__glow"></div>
+            <div class="proj__top">
+              <span class="proj__ico">&#128451;</span>
+              <div>
+                <h3>Investment Management DB</h3>
+                <p class="proj__tags">SQL - Schema Design - Views</p>
+              </div>
+            </div>
+            <ul class="proj__list">
+              <li>Normalized schema for funds, portfolios, instruments, trades/fills, and positions.</li>
+              <li>Views and queries for holdings, trade audit, P/L, and compliance flags.</li>
+              <li>Simulated PM and analyst workflows to study allocation and risk at scale.</li>
+            </ul>
+            <div class="proj__foot"><span class="proj__date">Oct 2025 - Present</span></div>
+          </article>
+
+          <article class="proj card--tilt anim" data-anim="fade-up" data-delay="2">
+            <div class="proj__glow"></div>
+            <div class="proj__top">
+              <span class="proj__ico">&#127922;</span>
+              <div>
+                <h3>FPGA Dice Roller</h3>
+                <p class="proj__tags">Verilog - DE1-SoC - ModelSim</p>
+              </div>
+            </div>
+            <ul class="proj__list">
+              <li>FSM-driven dice roller with input debouncing and clock prescaling.</li>
+              <li>Simulated in ModelSim, brought up on DE1-SoC with HEX and LED output.</li>
+              <li>Pin assignments and basic timing constraints via SDC/STA.</li>
+            </ul>
+            <div class="proj__foot"><span class="proj__date">Sept - Dec 2023</span></div>
+          </article>
+
+          <article class="proj card--tilt anim" data-anim="fade-up" data-delay="3">
+            <div class="proj__glow"></div>
+            <div class="proj__top">
+              <span class="proj__ico">&#128295;</span>
               <div>
                 <h3>Parameterizable FIFO + SVAs</h3>
-                <p class="proj__tags">SystemVerilog · Verification</p>
+                <p class="proj__tags">SystemVerilog - Formal Verification</p>
               </div>
             </div>
             <ul class="proj__list">
               <li>Synchronous FIFO with full/empty flags and safe write/read arbitration.</li>
-              <li>SVAs for overflow/underflow exclusion + boundary flag/count coherence.</li>
-              <li>Self-checking randomized testbench with seeded regressions + first-fail traces.</li>
+              <li>SVAs for overflow/underflow exclusion and boundary flag coherence.</li>
+              <li>Self-checking randomized testbench with seeded regressions and first-fail traces.</li>
             </ul>
-            <div class="proj__foot">
-              <span class="proj__date">Jun – Jul 2025</span>
-              <a class="proj__link" href="#" target="_blank" rel="noreferrer">GitHub →</a>
-            </div>
-          </article>
-
-          <article class="proj card--tilt anim" data-anim="fade-up" data-delay="3" data-cat="hardware">
-            <div class="proj__glow"></div>
-            <span class="proj__feat">★ Featured</span>
-            <div class="proj__top">
-              <span class="proj__ico">🎲</span>
-              <div>
-                <h3>FPGA Dice Roller</h3>
-                <p class="proj__tags">Verilog · DE1-SoC · ModelSim</p>
-              </div>
-            </div>
-            <ul class="proj__list">
-              <li>FSM-driven dice roller with input debouncing + clock prescaling.</li>
-              <li>Simulated in ModelSim and brought up on DE1-SoC with HEX + LEDs.</li>
-              <li>Pin assignments + basic timing constraints (SDC/STA).</li>
-            </ul>
-            <div class="proj__foot">
-              <span class="proj__date">Sept – Dec 2023</span>
-              <a class="proj__link" href="#" target="_blank" rel="noreferrer">GitHub →</a>
-            </div>
-          </article>
-
-          <article class="proj proj--placeholder anim" data-anim="fade-up" data-delay="4" data-cat="software">
-            <div class="proj__top">
-              <span class="proj__ico">➕</span>
-              <div>
-                <h3>Your Next Project</h3>
-                <p class="proj__tags">Coming Soon</p>
-              </div>
-            </div>
-            <p class="dim">Replace this card with your next project.</p>
-          </article>
-
-          <article class="proj proj--placeholder anim" data-anim="fade-up" data-delay="5" data-cat="hardware">
-            <div class="proj__top">
-              <span class="proj__ico">➕</span>
-              <div>
-                <h3>Your Next Project</h3>
-                <p class="proj__tags">Coming Soon</p>
-              </div>
-            </div>
-            <p class="dim">Another slot ready for your work.</p>
+            <div class="proj__foot"><span class="proj__date">Jun - Jul 2025</span></div>
           </article>
 
         </div>
+
+        <div class="proj-section-label anim" data-anim="fade-up" style="margin-top:56px">
+          <span class="proj-section-tag proj-section-tag--ongoing">Ongoing</span>
+          <h3 class="proj-section-title">In Progress</h3>
+        </div>
+        <div class="proj-ongoing-wrap">
+          <article class="proj proj--ongoing card--tilt anim" data-anim="fade-up" data-delay="1">
+            <div class="proj__glow"></div>
+            <span class="proj__ongoing-badge">In Progress</span>
+            <div class="proj__top">
+              <span class="proj__ico">&#128200;</span>
+              <div>
+                <h3>Stock Portfolio Tracker</h3>
+                <p class="proj__tags">Python - ML - Data Analysis</p>
+              </div>
+            </div>
+            <ul class="proj__list">
+              <li>Live portfolio dashboard tracking positions, P/L, and sector allocation.</li>
+              <li>Exploring LSTM and gradient-boosting on price and sentiment features for return prediction.</li>
+              <li>Pipeline targets feature engineering from price history, volume, and macro indicators.</li>
+            </ul>
+            <div class="proj__ml-note">
+              <span class="proj__ml-icon">&#129302;</span>
+              <span>ML approach in design - considering LSTM for time-series prediction and GBDT for factor scoring</span>
+            </div>
+            <div class="proj__foot"><span class="proj__date">Mar 2026 - Present</span></div>
+          </article>
+        </div>
+
       </div>
     </section>
 
-    <!-- ── EXPERIENCE ── -->
     <section id="experience" class="sec">
       <div class="contain">
         <header class="sec__head">
           <span class="sec__num anim" data-anim="fade-right">03</span>
           <h2 class="sec__title anim" data-anim="fade-up">Experience</h2>
         </header>
-
         <div class="tl">
           <div class="tl__item anim" data-anim="fade-up">
             <div class="tl__dot"></div>
@@ -323,91 +315,106 @@
                   <p class="dim tiny">Mohali, Punjab</p>
                 </div>
                 <div class="tl__meta">
-                  <span class="chip">Requirements · QA · Automation</span>
-                  <p class="dim tiny">Apr 2024 – Aug 2024</p>
-                  <p class="dim tiny">Jun 2025 – Sep 2025</p>
+                  <span class="chip">Requirements - QA - Automation</span>
+                  <p class="dim tiny">Apr 2024 - Aug 2024</p>
+                  <p class="dim tiny">Jun 2025 - Sep 2025</p>
                 </div>
               </div>
               <ul class="proj__list">
                 <li>Led discovery sessions with stakeholders and wrote user stories to shift defect discovery earlier.</li>
                 <li>Mapped as-is / to-be flows and maintained a change log to keep dev and QA aligned.</li>
-                <li>Derived test scenarios &amp; edge cases with QA to improve test coverage.</li>
+                <li>Derived test scenarios and edge cases with QA to improve test coverage.</li>
                 <li>Built Python scripts for log parsing, pass/fail stats, and first-fail triage summaries.</li>
               </ul>
             </div>
           </div>
-
-          <div class="tl__item tl__item--ghost anim" data-anim="fade-up" data-delay="1">
-            <div class="tl__dot tl__dot--ghost"></div>
-            <div class="card card--ghost">
-              <h3 class="dim">Your Next Role</h3>
-              <p class="dim tiny">Add your next internship or co-op here.</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- ── SKILLS ── -->
     <section id="skills" class="sec sec--alt">
       <div class="contain">
         <header class="sec__head">
           <span class="sec__num anim" data-anim="fade-right">04</span>
-          <h2 class="sec__title anim" data-anim="fade-up">Skills &amp; Tech</h2>
+          <h2 class="sec__title anim" data-anim="fade-up">Skills and Tech</h2>
         </header>
-
         <div class="skills">
-          <div class="skill-group anim" data-anim="fade-up">
-            <h3 class="skill-group__title">Programming</h3>
+          <div class="skill-group anim" data-anim="fade-up" data-delay="0">
+            <div class="skill-group__icon">&#9000;</div>
+            <h3 class="skill-group__title">Languages</h3>
             <div class="skill-group__pills">
-              <span class="pill">Java</span><span class="pill">Python</span><span class="pill">C / C++</span><span class="pill">OOP</span><span class="pill">DSA</span>
+              <span class="pill">Java</span>
+              <span class="pill">Python</span>
+              <span class="pill">C / C++</span>
+              <span class="pill">SQL</span>
             </div>
           </div>
           <div class="skill-group anim" data-anim="fade-up" data-delay="1">
+            <div class="skill-group__icon">&#128451;</div>
             <h3 class="skill-group__title">Databases</h3>
             <div class="skill-group__pills">
-              <span class="pill">SQL</span><span class="pill">Schema Design</span><span class="pill">Indexing</span><span class="pill">Normalization</span><span class="pill">Complex Queries</span>
+              <span class="pill">Schema Design</span>
+              <span class="pill">Normalization</span>
+              <span class="pill">Indexing</span>
+              <span class="pill">Complex Queries</span>
             </div>
           </div>
           <div class="skill-group anim" data-anim="fade-up" data-delay="2">
-            <h3 class="skill-group__title">Hardware &amp; Robotics</h3>
+            <div class="skill-group__icon">&#128268;</div>
+            <h3 class="skill-group__title">Hardware and FPGA</h3>
             <div class="skill-group__pills">
-              <span class="pill">Verilog</span><span class="pill">SystemVerilog</span><span class="pill">ModelSim / Questa</span><span class="pill">Quartus</span><span class="pill">DE1-SoC</span><span class="pill">ROS 2</span><span class="pill">OpenCV</span>
+              <span class="pill">Verilog</span>
+              <span class="pill">SystemVerilog</span>
+              <span class="pill">ModelSim / Questa</span>
+              <span class="pill">Quartus</span>
+              <span class="pill">DE1-SoC</span>
             </div>
           </div>
           <div class="skill-group anim" data-anim="fade-up" data-delay="3">
-            <h3 class="skill-group__title">Tools</h3>
+            <div class="skill-group__icon">&#129302;</div>
+            <h3 class="skill-group__title">Robotics and Vision</h3>
             <div class="skill-group__pills">
-              <span class="pill">Git</span><span class="pill">Linux</span><span class="pill">Bash / Make</span><span class="pill">GDB</span><span class="pill">Unit Testing</span>
+              <span class="pill">ROS2</span>
+              <span class="pill">OpenCV</span>
+              <span class="pill">LiDAR</span>
+              <span class="pill">Ackermann Control</span>
             </div>
           </div>
           <div class="skill-group anim" data-anim="fade-up" data-delay="4">
-            <h3 class="skill-group__title">Workflow</h3>
+            <div class="skill-group__icon">&#128202;</div>
+            <h3 class="skill-group__title">ML and Data</h3>
             <div class="skill-group__pills">
-              <span class="pill">Requirements Analysis</span><span class="pill">SDLC</span><span class="pill">Agile / Scrum</span><span class="pill">Debugging</span><span class="pill">Documentation</span>
+              <span class="pill pill--accent">scikit-learn</span>
+              <span class="pill pill--accent">pandas</span>
+              <span class="pill pill--accent">NumPy</span>
+              <span class="pill pill--accent">LSTM</span>
+              <span class="pill pill--accent">Feature Eng.</span>
             </div>
           </div>
           <div class="skill-group anim" data-anim="fade-up" data-delay="5">
-            <h3 class="skill-group__title">Interests</h3>
+            <div class="skill-group__icon">&#128295;</div>
+            <h3 class="skill-group__title">Tools and Workflow</h3>
             <div class="skill-group__pills">
-              <span class="pill pill--accent">Systems</span><span class="pill pill--accent">Verification</span><span class="pill pill--accent">Autonomous Vehicles</span><span class="pill pill--accent">Performance</span><span class="pill pill--accent">Reliability</span>
+              <span class="pill">Git</span>
+              <span class="pill">Linux</span>
+              <span class="pill">Bash / Make</span>
+              <span class="pill">GDB</span>
+              <span class="pill">Agile / Scrum</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ── CONTACT ── -->
     <section id="contact" class="sec">
       <div class="contain contact">
         <header class="sec__head">
           <span class="sec__num anim" data-anim="fade-right">05</span>
-          <h2 class="sec__title anim" data-anim="fade-up">Let's Talk</h2>
+          <h2 class="sec__title anim" data-anim="fade-up">Let us Talk</h2>
         </header>
-
         <div class="contact__body">
           <div class="contact__left anim" data-anim="fade-up">
-            <p class="sec__lead">I'm always open to new opportunities, collaborations, or just chatting about systems &amp; engineering.</p>
+            <p class="sec__lead">I am always open to new opportunities, collaborations, or just chatting about systems and engineering.</p>
             <a class="btn btn--glow btn--lg magnetic" href="mailto:singlahirdianshu@gmail.com">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>
               Say Hello
@@ -416,31 +423,29 @@
           <div class="contact__right anim" data-anim="fade-up" data-delay="1">
             <div class="contact__card card card--tilt">
               <div class="card__glow"></div>
-              <div class="contact__row"><span class="contact__label">📍 Location</span><strong>Surrey, BC, Canada</strong></div>
-              <div class="contact__row"><span class="contact__label">✉️ Email</span><a href="mailto:singlahirdianshu@gmail.com"><strong>singlahirdianshu@gmail.com</strong></a></div>
-              <div class="contact__row"><span class="contact__label">📞 Phone</span><a href="tel:+17789512263"><strong>+1 (778) 951-2263</strong></a></div>
+              <div class="contact__row"><span class="contact__label">Location</span><strong>Surrey, BC, Canada</strong></div>
+              <div class="contact__row"><span class="contact__label">Email</span><a href="mailto:singlahirdianshu@gmail.com"><strong>singlahirdianshu@gmail.com</strong></a></div>
+              <div class="contact__row"><span class="contact__label">Phone</span><a href="tel:+17789512263"><strong>+1 (778) 951-2263</strong></a></div>
             </div>
-            <p class="dim tiny" style="margin-top:12px;">💡 Remove the phone number before publishing if you'd like privacy.</p>
           </div>
         </div>
       </div>
     </section>
+
   </main>
 
-  <!-- ════ FOOTER ════ -->
   <footer class="ftr">
     <div class="contain ftr__inner">
-      <p class="dim">Designed &amp; built by <strong>Hirdianshu Singla</strong> · © <span id="year"></span></p>
+      <p class="dim">Designed and built by <strong>Hirdianshu Singla</strong> - 2026</p>
       <div class="ftr__links">
         <a href="https://github.com/hiri050" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/hirdianshu-singla/" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="#hero">Top ↑</a>
+        <a href="#hero">Top</a>
       </div>
     </div>
   </footer>
 
   <button class="btt" id="btt" aria-label="Back to top">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
   </button>
 
   <script src="./script.js"></script>

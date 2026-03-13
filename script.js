@@ -126,30 +126,6 @@
   anims.forEach(el => animObserver.observe(el))
 
   /* ═══════════════════════════════════════
-     9. PROJECT FILTER
-     ═══════════════════════════════════════ */
-  const filterBtns = $$('.proj-filters__btn')
-  const projCards = $$('.proj')
-
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('is-active'))
-      btn.classList.add('is-active')
-
-      const filter = btn.dataset.filter
-
-      projCards.forEach(card => {
-        const cat = card.dataset.cat
-        if (filter === 'all' || cat === filter) {
-          card.classList.remove('is-hidden')
-        } else {
-          card.classList.add('is-hidden')
-        }
-      })
-    })
-  })
-
-  /* ═══════════════════════════════════════
      10. CURSOR GLOW (desktop only)
      ═══════════════════════════════════════ */
   const cursorGlow = $('#cursorGlow')
@@ -279,41 +255,6 @@
 
     // Start typing after hero animations settle
     setTimeout(typeLine, 1400)
-  }
-
-  /* ═══════════════════════════════════════
-     14. HORIZONTAL SCROLL DRAG (.proj-track)
-     ═══════════════════════════════════════ */
-  const track = $('#projTrack')
-  if (track) {
-    let isDown = false
-    let startX = 0
-    let scrollLeft = 0
-
-    track.addEventListener('mousedown', e => {
-      isDown = true
-      track.classList.add('is-dragging')
-      startX = e.pageX - track.offsetLeft
-      scrollLeft = track.scrollLeft
-    })
-
-    track.addEventListener('mouseleave', () => {
-      isDown = false
-      track.classList.remove('is-dragging')
-    })
-
-    track.addEventListener('mouseup', () => {
-      isDown = false
-      track.classList.remove('is-dragging')
-    })
-
-    track.addEventListener('mousemove', e => {
-      if (!isDown) return
-      e.preventDefault()
-      const x = e.pageX - track.offsetLeft
-      const walk = (x - startX) * 1.8
-      track.scrollLeft = scrollLeft - walk
-    })
   }
 
 })()
