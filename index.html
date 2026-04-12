@@ -200,19 +200,19 @@
             <div class="proj__glow"></div>
             <div class="proj__top">
               <span class="proj__ico">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="1"/><path d="M7 10H4M7 14H4M17 10h3M17 14h3M10 7V4M14 7V4M10 17v3M14 17v3"/></svg>
               </span>
               <div>
-                <h3>FPGA Baccarat</h3>
-                <p class="proj__tags">SystemVerilog - FSM - DE1-SoC</p>
+                <h3>ARC4 Stream Cipher Cracker</h3>
+                <p class="proj__tags">SystemVerilog - Cyclone V - Quartus - DE1-SoC</p>
               </div>
             </div>
             <ul class="proj__list">
-              <li>Full baccarat game engine in SystemVerilog using an FSM-driven dealing pipeline with correct third-card rules, mod-10 hand scoring, and LFSR-based pseudorandom card generator.</li>
-              <li>Self-checking simulation testbench verifying FSM state transitions, result encoding, and edge cases; analyzed waveforms to confirm correct behaviour.</li>
-              <li>Synthesized and deployed on DE1-SoC FPGA hardware.</li>
+              <li>128-core parallel ARC4 cryptanalysis engine on Cyclone V FPGA via parametric generate instantiation; achieved <strong>5.74 million keys/second</strong> across a 24-bit keyspace (16.7M keys).</li>
+              <li>Early-abort PRGA FSM optimisation with inline ASCII validation; reduced cycles per wrong key from ~630 to ~14 (~45× reduction); device utilisation dropped 97% → 65% after eliminating 128 private PT memory blocks.</li>
+              <li>ALTPLL IP clock synthesis (50 → 70 MHz); custom ISMCE-accessible MBOX mailbox protocol for automated evaluator communication; 32-bit on-chip cycle counter for hardware performance profiling.</li>
             </ul>
-            <div class="proj__foot"><span class="proj__date">Jan 2026 - Feb 2026</span></div>
+            <div class="proj__foot"><span class="proj__date">Jan 2026 - Apr 2026</span></div>
           </article>
 
         </div>
@@ -221,9 +221,35 @@
           <span class="proj-section-tag">All Projects</span>
           <h3 class="proj-section-title">More Work</h3>
         </div>
-        <div class="proj-all-grid">
+        <div class="proj-all-grid" id="moreWorkGrid">
 
+          <!-- VISIBLE: first 3 -->
           <article class="proj card--tilt anim" data-anim="fade-up" data-delay="1">
+            <div class="proj__glow"></div>
+            <div class="proj__top">
+              <span class="proj__ico">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </span>
+              <div>
+                <h3>AI Financial Assistant &amp; Messenger</h3>
+                <p class="proj__tags">Node.js - MongoDB - WebSockets - Python Flask - Llama3 - LLaVA - Whisper</p>
+              </div>
+            </div>
+            <ul class="proj__list">
+              <li>Real-time multi-room chat app with Node.js, Express, MongoDB, and WebSocket broker; session-based auth and REST API; built an <strong>AI Financial Assistant panel</strong> supporting text, voice, and chart-image queries for live stock price lookups via Alpha Vantage.</li>
+              <li>Chart pattern recognition via LLaVA identifying candlestick patterns, trend direction, and support/resistance levels; voice transcription via Whisper enabling hands-free stock queries and combined multimodal voice + chart analysis workflow.</li>
+              <li>Llama3-powered <strong>AI Ad Recommendation sidebar</strong> reads live chat context and auto-refreshes relevant ad suggestions every 30 seconds; Python Flask AI server exposes six REST endpoints.</li>
+            </ul>
+            <div class="proj__foot">
+              <span class="proj__date">Jan 2026 - Apr 2026</span>
+              <button class="proj__expand-btn" onclick="(function(btn){var c=btn.closest('.proj');c.classList.toggle('proj--exp');btn.querySelector('span').textContent=c.classList.contains('proj--exp')?'Less':'More';})(this)" aria-label="Expand">
+                <span>More</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <article class="proj card--tilt anim" data-anim="fade-up" data-delay="2">
             <div class="proj__glow"></div>
             <div class="proj__top">
               <span class="proj__ico">
@@ -239,10 +265,16 @@
               <li>Views and queries for holdings, trade audit, P/L, and compliance flags.</li>
               <li>Simulated PM and analyst workflows to study allocation and risk at scale.</li>
             </ul>
-            <div class="proj__foot"><span class="proj__date">Oct 2025 - Present</span></div>
+            <div class="proj__foot">
+              <span class="proj__date">Oct 2025 - Present</span>
+              <button class="proj__expand-btn" onclick="(function(btn){var c=btn.closest('.proj');c.classList.toggle('proj--exp');btn.querySelector('span').textContent=c.classList.contains('proj--exp')?'Less':'More';})(this)" aria-label="Expand">
+                <span>More</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
           </article>
 
-          <article class="proj card--tilt anim" data-anim="fade-up" data-delay="2">
+          <article class="proj card--tilt anim" data-anim="fade-up" data-delay="3">
             <div class="proj__glow"></div>
             <div class="proj__top">
               <span class="proj__ico">
@@ -258,10 +290,17 @@
               <li>Simulated in ModelSim, brought up on DE1-SoC with HEX and LED output.</li>
               <li>Pin assignments and basic timing constraints via SDC/STA.</li>
             </ul>
-            <div class="proj__foot"><span class="proj__date">Sept - Dec 2023</span></div>
+            <div class="proj__foot">
+              <span class="proj__date">Sept - Dec 2023</span>
+              <button class="proj__expand-btn" onclick="(function(btn){var c=btn.closest('.proj');c.classList.toggle('proj--exp');btn.querySelector('span').textContent=c.classList.contains('proj--exp')?'Less':'More';})(this)" aria-label="Expand">
+                <span>More</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
           </article>
 
-          <article class="proj card--tilt anim" data-anim="fade-up" data-delay="3">
+          <!-- HIDDEN: revealed by Show More -->
+          <article class="proj card--tilt anim proj--hidden" data-anim="fade-up" data-delay="1" style="display:none">
             <div class="proj__glow"></div>
             <div class="proj__top">
               <span class="proj__ico">
@@ -277,9 +316,54 @@
               <li>SVAs for overflow/underflow exclusion and boundary flag coherence.</li>
               <li>Self-checking randomized testbench with seeded regressions and first-fail traces.</li>
             </ul>
-            <div class="proj__foot"><span class="proj__date">Jun - Jul 2025</span></div>
+            <div class="proj__foot">
+              <span class="proj__date">Jun - Jul 2025</span>
+              <button class="proj__expand-btn" onclick="(function(btn){var c=btn.closest('.proj');c.classList.toggle('proj--exp');btn.querySelector('span').textContent=c.classList.contains('proj--exp')?'Less':'More';})(this)" aria-label="Expand">
+                <span>More</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
           </article>
 
+          <article class="proj card--tilt anim proj--hidden" data-anim="fade-up" data-delay="2" style="display:none">
+            <div class="proj__glow"></div>
+            <div class="proj__top">
+              <span class="proj__ico">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+              </span>
+              <div>
+                <h3>FPGA Baccarat</h3>
+                <p class="proj__tags">SystemVerilog - FSM - DE1-SoC</p>
+              </div>
+            </div>
+            <ul class="proj__list">
+              <li>Full baccarat game engine in SystemVerilog using FSM-driven dealing pipeline with correct third-card rules, mod-10 hand scoring, and LFSR-based pseudorandom card generator.</li>
+              <li>Self-checking simulation testbench verifying FSM state transitions, result encoding, and edge cases; analyzed waveforms to confirm correct behaviour.</li>
+              <li>Synthesized and deployed on DE1-SoC FPGA hardware.</li>
+            </ul>
+            <div class="proj__foot">
+              <span class="proj__date">Jan 2026 - Feb 2026</span>
+              <button class="proj__expand-btn" onclick="(function(btn){var c=btn.closest('.proj');c.classList.toggle('proj--exp');btn.querySelector('span').textContent=c.classList.contains('proj--exp')?'Less':'More';})(this)" aria-label="Expand">
+                <span>More</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Show More / Show Less button -->
+        <div style="display:flex;justify-content:center;margin-top:32px">
+          <button id="showMoreBtn" onclick="(function(){
+            var hidden = document.querySelectorAll('.proj--hidden');
+            var btn = document.getElementById('showMoreBtn');
+            var showing = btn.getAttribute('data-open') === '1';
+            hidden.forEach(function(el){
+              el.style.display = showing ? 'none' : 'block';
+            });
+            btn.setAttribute('data-open', showing ? '0' : '1');
+            btn.innerHTML = showing ? 'Show More &darr;' : 'Show Less &uarr;';
+          })()" data-open="0" style="background:transparent;border:1.5px solid var(--accent,#6ee7b7);color:var(--accent,#6ee7b7);padding:10px 32px;border-radius:999px;font-size:0.95rem;font-weight:600;cursor:pointer;letter-spacing:0.04em;transition:background 0.2s,color 0.2s" onmouseover="this.style.background='var(--accent,#6ee7b7)';this.style.color='#0f172a'" onmouseout="this.style.background='transparent';this.style.color='var(--accent,#6ee7b7)'">Show More ↓</button>
         </div>
 
         <div class="proj-section-label anim" data-anim="fade-up" style="margin-top:56px">
