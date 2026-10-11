@@ -1,0 +1,109 @@
+.contact {
+  position: relative;
+  min-height: 100svh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.contact__inner {
+  width: 100%;
+  align-self: center;
+  display: grid;
+  gap: clamp(24px, 4vh, 40px);
+  padding-top: calc(var(--header-h) + 64px);
+  padding-bottom: 64px;
+}
+
+.contact__title {
+  font-size: clamp(3rem, 10.5vw, 11.5rem);
+  font-weight: 500;
+  letter-spacing: -0.06em;
+  line-height: 0.88;
+  max-width: 8ch;
+}
+
+.contact__email {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 24px;
+}
+.contact__email-link {
+  display: inline-block;
+  font-size: clamp(1.3rem, 3.4vw, 3rem);
+  letter-spacing: -0.03em;
+  border-bottom: 1px solid var(--line-strong);
+  padding-bottom: 6px;
+  transition: color 0.4s, border-color 0.4s;
+  overflow-wrap: anywhere;
+}
+.contact__email-link:hover,
+.contact__email-link:focus-visible {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.contact__copy {
+  height: 36px;
+  min-width: 84px;
+  padding-inline: 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  transition: border-color 0.3s, color 0.3s;
+}
+.contact__copy:hover,
+.contact__copy:focus-visible {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.contact__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 40px;
+}
+.contact__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1rem;
+  padding-block: 6px;
+  color: var(--dim);
+  transition: color 0.3s;
+}
+.contact__link svg {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.5s var(--ease-out);
+}
+.contact__link:hover,
+.contact__link:focus-visible {
+  color: var(--text);
+}
+.contact__link:hover svg {
+  transform: translate(3px, -3px);
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 32px;
+  padding-block: 24px;
+  border-top: 1px solid var(--line);
+}
+.footer__built {
+  margin-left: auto;
+}
+.footer__egg {
+  color: var(--faint);
+}
+.footer__top {
+  color: var(--text);
+}
+
+@media (max-width: 720px) {
+  .footer__built {
+    margin-left: 0;
+  }
+}

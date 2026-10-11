@@ -1,0 +1,151 @@
+.skills__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.4fr);
+  gap: clamp(32px, 5vw, 80px);
+  align-items: center;
+}
+
+.skills__panel {
+  display: grid;
+  gap: 32px;
+  align-content: start;
+}
+
+.skills__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.skills__filter {
+  height: 32px;
+  padding-inline: 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--dim);
+  transition: color 0.3s, border-color 0.3s, background 0.3s;
+}
+.skills__filter:hover {
+  color: var(--text);
+  border-color: var(--line-strong);
+}
+.skills__filter.is-active {
+  color: #0b0b0c;
+  background: var(--text);
+  border-color: var(--text);
+}
+
+.skills__info {
+  min-height: 220px;
+  display: grid;
+  gap: 12px;
+  align-content: start;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+.skills__info-title {
+  font-size: var(--fs-h2);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1.02;
+}
+.skills__used {
+  display: grid;
+  gap: 6px;
+}
+.skills__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.skills__chips .chip {
+  color: var(--text);
+  transition: border-color 0.3s;
+}
+.skills__chips .chip:hover,
+.skills__chips .chip:focus-visible {
+  border-color: var(--accent);
+}
+
+.skills__stage {
+  position: relative;
+  touch-action: pan-y;
+}
+.skills__svg {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  overflow: visible;
+  user-select: none;
+}
+
+.skills__edge {
+  stroke: rgba(236, 235, 232, 0.08);
+  stroke-width: 1;
+  transition: stroke 0.3s;
+}
+.skills__edge.is-lit {
+  stroke: rgba(255, 106, 43, 0.65);
+}
+
+.skills__hit {
+  fill: transparent;
+}
+.skills__dot {
+  fill: var(--text);
+  transition: fill 0.3s;
+}
+.skills__node.is-hub .skills__dot {
+  fill: var(--accent);
+}
+.skills__label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  fill: rgba(236, 235, 232, 0.72);
+  transition: fill 0.3s;
+  pointer-events: none;
+}
+.skills__node.is-hub .skills__label {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  fill: var(--text);
+}
+.skills__node:not(.is-hub):not(.is-hover)[data-front='0'] .skills__label {
+  opacity: 0;
+}
+.skills__label {
+  transition: opacity 0.4s, fill 0.3s;
+}
+.skills__node.is-dim .skills__dot {
+  fill: rgba(236, 235, 232, 0.2);
+}
+.skills__node.is-dim .skills__label {
+  fill: rgba(236, 235, 232, 0.16);
+}
+.skills__node.is-hover .skills__dot {
+  fill: var(--accent);
+}
+.skills__node.is-hover .skills__label {
+  fill: var(--accent);
+}
+
+.skills__used-link {
+  text-align: left;
+  transition: color 0.3s;
+}
+.skills__used-link:hover,
+.skills__used-link:focus-visible {
+  color: var(--accent);
+}
+
+@media (max-width: 960px) {
+  .skills__grid {
+    grid-template-columns: 1fr;
+  }
+  .skills__stage {
+    order: -1;
+  }
+  .skills__info {
+    min-height: 0;
+  }
+}

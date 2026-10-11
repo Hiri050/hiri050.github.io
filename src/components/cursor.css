@@ -1,0 +1,131 @@
+html.has-cursor,
+html.has-cursor * {
+  cursor: none !important;
+}
+html.has-cursor input,
+html.has-cursor textarea {
+  cursor: text !important;
+}
+
+.cursor {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.cursor.is-visible {
+  opacity: 1;
+}
+
+.cursor__dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--text);
+  mix-blend-mode: difference;
+  transition: opacity 0.3s, scale 0.3s var(--ease-out);
+}
+
+.cursor__ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(236, 235, 232, 0.35);
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  transition: border-color 0.4s, background-color 0.4s, scale 0.35s var(--ease-out);
+  will-change: transform, width, height;
+}
+
+.cursor.is-down .cursor__ring {
+  scale: 0.82;
+}
+
+.cursor[data-mode='link'] .cursor__ring {
+  border-color: rgba(236, 235, 232, 0.7);
+}
+.cursor[data-mode='link'] .cursor__dot {
+  scale: 0;
+}
+
+.cursor[data-mode='view'] .cursor__ring {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.cursor[data-mode='view'] .cursor__dot,
+.cursor[data-mode='stick'] .cursor__dot {
+  opacity: 0;
+}
+
+.cursor[data-mode='drag'] .cursor__ring {
+  border-color: var(--accent);
+  border-style: dashed;
+}
+
+.cursor[data-mode='stick'] .cursor__ring {
+  border-color: rgba(236, 235, 232, 0.5);
+  background: rgba(236, 235, 232, 0.04);
+}
+
+.cursor[data-mode='text'] .cursor__ring {
+  opacity: 0;
+}
+
+.cursor__label {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #0b0b0c;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.cursor[data-mode='view'] .cursor__label,
+.cursor[data-mode='drag'] .cursor__label {
+  opacity: 1;
+}
+.cursor[data-mode='drag'] .cursor__label {
+  color: var(--accent);
+}
+
+/* Crosshair ticks: shown over the sculptable terrain. */
+.cursor__tick {
+  position: absolute;
+  background: var(--accent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.cursor__tick--n,
+.cursor__tick--s {
+  left: 50%;
+  width: 1px;
+  height: 7px;
+  margin-left: -0.5px;
+}
+.cursor__tick--e,
+.cursor__tick--w {
+  top: 50%;
+  height: 1px;
+  width: 7px;
+  margin-top: -0.5px;
+}
+.cursor__tick--n { top: -4px; }
+.cursor__tick--s { bottom: -4px; }
+.cursor__tick--e { right: -4px; }
+.cursor__tick--w { left: -4px; }
+
+.cursor[data-mode='sculpt'] .cursor__tick {
+  opacity: 1;
+}
+.cursor[data-mode='sculpt'] .cursor__ring {
+  border-color: rgba(255, 106, 43, 0.45);
+}
